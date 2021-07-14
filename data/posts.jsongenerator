@@ -1,0 +1,44 @@
+[
+  '{{repeat(20, 20)}}',
+  {
+    id: '{{guid()}}',
+    date: '{{date(new Date(2020, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss")}}',
+    slug: function (t) {
+      return t.lorem(1, "sentences").replaceAll(" ", "-").replaceAll(".", "").toLowerCase();
+    },
+    title: '{{lorem(1, "sentences")}}',
+    picture: function (t, i) {
+      var url = 'https://picsum.photos/id/' + t.random(1001, 1002, 1003, 1004, 1005, 1006, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029);
+      
+      return {
+        thumbnail: url + '/800/600',
+        medium: url + '/1280/720',
+        large: url + '/1920/1080'
+      };
+    },
+    excerpt: '{{lorem(1, "paragraphs")}}',
+    content: '{{lorem(1, "paragraphs")}}',
+    author: {
+      id: '{{guid()}}',
+      name: '{{firstName()}} {{surname()}}',
+      email: '{{email()}}',
+      company: '{{company().toUpperCase()}}',
+      avatar: 'https://i.pravatar.cc/300',
+      about: '{{lorem(1, "paragraphs")}}'
+    },
+    tags: [
+      '{{repeat(7)}}',
+      '{{lorem(1, "words")}}'
+    ],
+    comments: [
+      '{{repeat(3)}}',
+      {
+        id: '{{guid()}}',
+        name: '{{firstName()}} {{surname()}}',
+        email: '{{email()}}',
+        avatar: 'https://i.pravatar.cc/300',
+        comment: '{{lorem(integer(1, 3), "paragraphs")}}'
+      }
+    ]
+  }
+]
