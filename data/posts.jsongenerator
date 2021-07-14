@@ -8,12 +8,12 @@
     },
     title: '{{lorem(1, "sentences")}}',
     picture: function (t, i) {
-      var url = 'https://picsum.photos/id/' + t.random(1001, 1002, 1003, 1004, 1005, 1006, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029);
+      var url = 'https://images.unsplash.com/photo-' + t.random('1626183834780-2d2ddee5702d', '1626244297294-c1aecb88f542', '1626186245092-5a7b1ba890a8', '1626184358417-1502f6faf7c9', '1626181378139-9935bab611c8', '1626209614616-28d518b676e5', '1626233127008-5431435e7a57', '1613585574494-200c873926e1', '1626131719997-e216ff236c40') + '?fit=crop&q=80';
       
       return {
-        thumbnail: url + '/800/600',
-        medium: url + '/1280/720',
-        large: url + '/1920/1080'
+        thumbnail: url + '&w=800&h=600',
+        medium: url + '&w=1280&h=720',
+        large: url + '&w=1920&h=1080'
       };
     },
     excerpt: '{{lorem(1, "paragraphs")}}',
