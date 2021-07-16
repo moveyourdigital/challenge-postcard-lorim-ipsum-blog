@@ -1,6 +1,6 @@
 <img src="docs/blog-post.jpg" />
 
-# Next.js + Tailwind CSS Blog Challenge 🚀 &nbsp; ![easy](https://img.shields.io/badge/-Medium-yellow) ![time](https://img.shields.io/badge/%E2%8F%B0-3h-blue) 
+# Next.js + Tailwind CSS PostCard Lorim Ipsum blog challenge 🚀 ![time](https://img.shields.io/badge/%E2%8F%B0-5h-blue?style=flat-square)
 
 The goal of this challenge is to provide a baseline for candidates to experience React, Next.js and Tailwind CSS environment while being able to validate technical and autonomy skills.
 
@@ -11,11 +11,11 @@ Please take the time to read the instructions below before starting.
 
 ## How?
 
-You will be assigned this challenge. You MUST fork this repository into your own space and then start developing these tasks.Once finished, you should open a Pull Request. 
+You will be assigned this challenge. You MUST fork this repository into your own space and then start developing these tasks. Once finished, you should open a Pull Request. 
 
 ### Why? 
 
-Because we're going to start a little peer code review there. We will be able to talk and understand a little more about your process.
+Glad you asked! Because we're going to start a little peer code review there. We will be able to talk and understand a little more about your process.
 The whole idea is for you and for us to understand if we are able to communicate and collaborate together.
 
 
@@ -56,6 +56,7 @@ This new site should feature a simple header, a summary of blog posts with a loa
 ## Tasks 🏁
 
 ### 1. First Run 
+![easy](https://img.shields.io/badge/-Easy-brightgreen?style=flat-square) ![time](https://img.shields.io/badge/%E2%8F%B0-25m-blue?style=flat-square)
 
 *Points: 2*
 
@@ -75,6 +76,7 @@ If you need to, you can learn more about Next.js. Take a look at the following r
 
 
 ### 2. Styling with Tailwind CSS
+![easy](https://img.shields.io/badge/-Easy-brightgreen?style=flat-square) ![time](https://img.shields.io/badge/%E2%8F%B0-45m-blue?style=flat-square)
 
 *Points: 4*
 
@@ -88,6 +90,7 @@ Center the posts container and make sure it doesn't grow larger than the `md` si
 
 
 ### 3. Simple Header
+![medium](https://img.shields.io/badge/-Medium-yellow?style=flat-square) ![time](https://img.shields.io/badge/%E2%8F%B0-1h-blue?style=flat-square)
 
 *Points: 6*
 
@@ -97,6 +100,7 @@ Apply some margins that must be consistent to the existing design. Make sure it 
 
 
 ### 4. About us page
+![medium](https://img.shields.io/badge/-Medium-yellow?style=flat-square) ![time](https://img.shields.io/badge/%E2%8F%B0-1h-blue?style=flat-square)
 
 *Points: 8* 
 
@@ -108,6 +112,7 @@ You are free to add anything you like.
 
 
 ### 5. Blog post page
+![advanced](https://img.shields.io/badge/-Advanced-red?style=flat-square) ![time](https://img.shields.io/badge/%E2%8F%B0-2h-blue?style=flat-square)
 
 *Points: 10*
 
