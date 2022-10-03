@@ -53,7 +53,7 @@ const Home: InferGetStaticPropsType<typeof getStaticProps> = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="px-4 lg:px-0 max-w-screen-md mx-auto my-10">
+      <main className="px-4 lg:px-0 max-w-screen-md mx-auto my-10" id="home-page">
         <h1 className="font-sans text-3xl mb-12 font-thin">
           Welcome to <Link href="/" passHref><a className="font-semibold">PostCard Lorim Ipsum</a></Link> blog
         </h1>
