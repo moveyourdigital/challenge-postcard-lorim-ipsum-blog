@@ -54,8 +54,8 @@ const Home: InferGetStaticPropsType<typeof getStaticProps> = ({
       </Head>
 
       <main className=" max-w-screen-md mx-auto my-10">
-        <h1 className=" text-3xl mb-12 font-thin">
-          Welcome to <Link href="/" passHref><a className="font-light">PostCard Lorim Ipsum</a></Link> blog
+        <h1 className="font-sans text-3xl mb-12 font-thin">
+          Welcome to <Link href="/" passHref><a className="font-semibold">PostCard Lorim Ipsum</a></Link> blog
         </h1>
 
         <section className="mb-10 flex flex-col space-y-10">
