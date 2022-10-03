@@ -47,6 +47,7 @@ const Home: InferGetStaticPropsType<typeof getStaticProps> = ({
 
   return (
     <>
+    
       <Head>
         <title>The PostCard Blog</title>
         <meta name="description" content="A random collections of lorem ipsum posts" />
@@ -77,7 +78,9 @@ const Home: InferGetStaticPropsType<typeof getStaticProps> = ({
       <footer className="border-t text-center py-10 text-gray-700 text-sm font-semibold">
         © {new Date().getFullYear()} PostCard Lorim Ipsum blog
       </footer>
+
     </>
+
   )
 }
 
