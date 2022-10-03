@@ -55,7 +55,7 @@ const Home: InferGetStaticPropsType<typeof getStaticProps> = ({
 
       <main className=" max-w-screen-md mx-auto my-10">
         <h1 className=" text-3xl mb-12 font-thin">
-          Welcome to <Link href="/" passHref><a className="font-light">PostCard Lorim Ipsum</a></Link> blog
+          Welcome to <Link href="/" passHref><a className="font-sans font-medium">PostCard Lorim Ipsum</a></Link> blog
         </h1>
 
         <section className="mb-10 flex flex-col space-y-10">
@@ -74,7 +74,7 @@ const Home: InferGetStaticPropsType<typeof getStaticProps> = ({
         )}
       </main>
 
-      <footer className="border-t text-center py-10 text-gray-700 text-sm">
+      <footer className="border-t text-center py-10 text-gray-700 text-sm font-semibold">
         © {new Date().getFullYear()} PostCard Lorim Ipsum blog
       </footer>
     </>

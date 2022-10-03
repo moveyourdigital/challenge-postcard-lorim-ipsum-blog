@@ -23,15 +23,16 @@ const PostCard: FC<Post> = ({
           className="object-cover rounded-t"
         />
       </div>
-
-      <h3
-        className=" text-lg font-bold"
-      >{title}</h3>
-
+      <div className="container items-center border-2 shadow-2xl">
+        <h3
+          className=" text-lg font-sans pl-4 font-bold mt-4 font-sans"
+        >{title}</h3>
       <p
-        className=""
+        className="pl-4 pt-4 pb-2 font-sans"
       >{excerpt}</p>
+      </div>
     </article>
+
   )
 }
 
