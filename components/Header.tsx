@@ -1,5 +1,6 @@
 import { FC, PropsWithChildren } from "react";
 
+
 const Header: FC<
   PropsWithChildren<
   any
@@ -20,7 +21,7 @@ const Header: FC<
             <a href="/" className=" ml-2 text-white pt-2 pb-2 pr-2 pl-2 hover:bg-gray-700 hover:text-white rounded-md font-sans font-semibold antialiased">
               Home
             </a>
-            <a href="/" className=" ml-2 text-white pt-2 pb-2 pr-2 pl-2 hover:bg-gray-700 hover:text-white rounded-md font-sans font-semibold antialiased">
+            <a href="/about" className=" ml-2 text-white pt-2 pb-2 pr-2 pl-2 hover:bg-gray-700 hover:text-white rounded-md font-sans font-semibold antialiased">
               About Us
             </a>
           </div>

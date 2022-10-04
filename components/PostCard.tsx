@@ -12,7 +12,7 @@ const PostCard: FC<Post> = ({
   return (
     <article
       id={id}
-      className="shadow-sm"
+      className="shadow-sm prose lg:prose-xl"
     >
       <div className="w-full relative aspect-w-4 aspect-h-3">
         <Image

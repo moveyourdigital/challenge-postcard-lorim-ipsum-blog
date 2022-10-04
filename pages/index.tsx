@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Button from "../components/Button";
 import PostCard from "../components/PostCard";
 import { PostsResponse } from "./api/posts";
+import Container from "../components/Container";
 
 const baseURL = process.env.NEXT_PUBLIC_BASE_URL
 
@@ -47,33 +48,34 @@ const Home: InferGetStaticPropsType<typeof getStaticProps> = ({
 
   return (
     <>
-    
+
       <Head>
         <title>The PostCard Blog</title>
         <meta name="description" content="A random collections of lorem ipsum posts" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" max-w-screen-md mx-auto my-10">
-        <h1 className=" text-3xl mb-12 font-thin">
-          Welcome to <Link href="/" passHref><a className="font-sans font-medium">PostCard Lorim Ipsum</a></Link> blog
-        </h1>
+      <Container>
+        <main className=" max-w-screen-md mx-auto my-10">
+          <h1 className=" text-3xl mb-12 font-thin">
+            Welcome to <Link href="/" passHref><a className="font-sans font-medium">PostCard Lorim Ipsum</a></Link> blog
+          </h1>
 
-        <section className="mb-10 flex flex-col space-y-10">
-          {posts.map((post) => (
-            <PostCard key={post.id} {...post} />
-          ))}
-        </section>
-
-        {hasMore && (
-          <div className="mb-10 text-center">
-            <Button
-              onClick={fetchMorePosts}
-              disabled={isLoading}
-            >Carregar mais</Button>
-          </div>
-        )}
-      </main>
+          <section className="mb-10 flex flex-col space-y-10">
+            {posts.map((post) => (
+              <PostCard key={post.id} {...post} />
+            ))}
+          </section>
+          {hasMore && (
+            <div className="mb-10 text-center">
+              <Button
+                onClick={fetchMorePosts}
+                disabled={isLoading}
+              >Carregar mais</Button>
+            </div>
+          )}
+        </main>
+      </Container>
 
       <footer className="border-t text-center py-10 text-gray-700 text-sm font-semibold">
         © {new Date().getFullYear()} PostCard Lorim Ipsum blog
