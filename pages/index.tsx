@@ -17,7 +17,6 @@ const getPosts = async (offset: number = 0, limit: number = 4) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const postsResponse = await getPosts()
-
   return {
     props: { postsResponse },
     revalidate: 30,
