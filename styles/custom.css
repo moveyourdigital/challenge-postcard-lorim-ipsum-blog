@@ -19,3 +19,27 @@ p,
 pre {
   margin: 0;
 }
+
+.nav-item {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: black;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+}
+
+.nav-item-active:after {
+  width: 100%;
+}
