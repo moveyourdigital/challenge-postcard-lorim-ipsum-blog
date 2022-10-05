@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from 'react';
 import Comments from "../../components/Comments";
+import Loading from "../../components/Loading";
 import { Post } from './../api/posts';
 
 const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
@@ -21,12 +22,15 @@ export default function PostPage () {
     const router = useRouter();
     const id = router.query.pid;
     const [post, setPost] = useState<Post>()
+    const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {
         async function fetchData () {
             if (id) {
+                setIsLoading(true)
                 const post = await getPost(id)
                 setPost(post)
+                setIsLoading(false)
             }
         }
 
@@ -52,6 +56,7 @@ export default function PostPage () {
         <meta name="description" content={post?.title} />
         <link rel="icon" href="/favicon.ico" />
         </Head>
+        {isLoading ? <Loading /> :
         <main className="px-4 lg:px-0 max-w-screen-md mx-auto my-10">
             <section>
                 <div className="flex md:flex-row flex-col justify-start items-center">
@@ -115,6 +120,7 @@ export default function PostPage () {
             </div>
             </section>
         </main>
+        }
         </>
     )
 }
