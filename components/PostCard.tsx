@@ -1,18 +1,21 @@
 import { FC } from "react";
 import Image from "next/image";
 import { Post } from "../pages/api/posts";
+import Link from "next/link";
 
 const PostCard: FC<Post> = ({
   id,
   title,
   picture,
   excerpt,
+  slug,
 }) => {
 
   return (
+    <Link href={`/post/${encodeURIComponent(slug)}`}>
     <article
       id={id}
-      className="shadow-sm"
+      className="shadow-md rounded cursor-pointer"
     >
       <div className="w-full relative aspect-w-4 aspect-h-3">
         <Image
@@ -25,13 +28,14 @@ const PostCard: FC<Post> = ({
       </div>
 
       <h3
-        className=" text-lg font-bold"
+        className="pl-4 py-4 pr-4 text-lg font-bold"
       >{title}</h3>
 
       <p
-        className=""
+        className="pl-4 pb-4 pr-4"
       >{excerpt}</p>
     </article>
+    </ Link>
   )
 }
 
