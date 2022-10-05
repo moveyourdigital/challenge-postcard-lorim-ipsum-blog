@@ -70,7 +70,7 @@ export default function PostPage () {
                             unoptimized={true}
                             height='80%'
                             width='80%'
-                            className="rounded-full"
+                            className="rounded-full bg-gray-300"
                          />}
                          </div>
                          <p className="font-mono text-xs antialiased font-thin mt-4">{post && post.author.email}</p>
